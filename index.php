@@ -25,13 +25,9 @@
 	    </div>
 
 			<ul class="topnav">
-				<li><a href="#" class="borderTop">DASHBOARD</a></li>
-				<li><a href="#">EDIT WEBSITE</a></li>
-      	<li><a href="#">MANAGE EMPLOYEE ACCOUNTS</a></li>
-	      <li><a href="#">PENDING POSTS</a></li>
-	      <li><a href="#">UPLOADS</a></li>
-	      <li><a href="#">NEWS AND EVENTS</a></li>
-				<li><a href="#">ARCHIVES</a></li>
+				<li><a href="#" class="borderTop">View Competitors</a></li>
+				<li><a href="#">View Map</a></li>
+      	<li><a href="#">Filter Views</a></li>
 			</ul>
     </nav>
 
