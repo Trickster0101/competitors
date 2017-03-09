@@ -180,14 +180,9 @@ body
 .table {
   background-color: white;
 }
-tr:nth-child(even) {
- background-color: rgba(118, 118, 122, 0.82);
- color: #FFFFFF;
- }
- tr:hover {
-   background-color: rgba(255, 0, 28, 0.82);
-   color: #FFFFFF;
- }
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 /* Mobile Version */
 @media screen and (max-width:680px) {
