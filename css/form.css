@@ -1,0 +1,62 @@
+.post-form input[type=text] {
+  font-family: "Myriad";
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.textarea-style {
+  font-family: "Myriad";
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.post-form {
+  margin: 5% 5% 0% 5%;
+}
+
+.post-form input[type=textarea]:focus, .post-form input[type=text]:focus, .textarea-style:focus {
+  border: 3px solid #555;
+}
+
+.save-publish {
+  background-color: #1a1a1a;
+  padding: 2%;
+  text-decoration: none;
+  font-family: "Myriad";
+  font-size: 18px;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.save-publish:hover {
+  font-size: 25px;
+}
+
+.label-style {
+  font-family: "Myriad";
+  font-size: 20px;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+}
