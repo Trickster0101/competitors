@@ -52,18 +52,20 @@
 
     <div class="row body-page">
       <div class="col-12 col-m-12 container">
+				<?php include '../php/competitor/filter-competitor.php' ?>;
 
-        <form id="post-form" action="../php/competitor/add-competitor.php" method="post">
+        <form id="post-form" action="../php/competitor/remove-competitor.php" method="post">
     			<div class="row post-form">
     				<div class="col-12 col-m-12">
     					<label class="label-style">Competitor Name</label>
-    					<input type="text" name="competitor_name" required>
+    					<input type="text" name="competitor_name" value="<?php echo $competitor_name; ?>" readonly>
+							<input type="number" name="competitor_id" value="<?php echo $competitor_id; ?>" style="display:none;" readonly>
     				</div>
     			</div>
 
     			<div class="row post-form">
     				<div class="col-12 col-m-12">
-    					<input class="save-publish" type="submit" name="submit-competitor">
+    					<input class="save-publish" type="submit" name="submit-competitor" value="Remove Competitor">
     				</div>
     			</div>
     		</form>

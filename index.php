@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 
 <html>
@@ -10,9 +13,8 @@
 
 <head>
 	<title>Competitors</title>
-	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-panel.css?version=75" />
+	<link rel="stylesheet" type="text/css" href="css/admin-panel.css?version=77" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 

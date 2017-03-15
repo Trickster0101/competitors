@@ -160,6 +160,10 @@ body
   font-weight: bold;
 }
 
+.maps-style{
+  height: 800px;
+  width: 100%;
+}
 
 /* Mobile Version */
 @media screen and (max-width:680px) {

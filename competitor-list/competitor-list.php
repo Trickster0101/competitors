@@ -1,3 +1,9 @@
+<?php
+	session_start();
+	session_unset();
+	$_SESSION["competitors_id"] = null;
+	$_SESSION["branch_id"] = null;
+?>
 <!DOCTYPE html>
 
 <html>
@@ -7,7 +13,7 @@
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=90" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=97" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,11 +30,10 @@
     </div>
 
 		<ul class="topnav">
-			<li><a href="view-competitor-list.php" class="borderTop">View Competitor</a></li>
+			<li><a href="competitor-list.php" class="borderTop">View Competitor</a></li>
     	<li><a href="add-competitor.php">Add Competitor</a></li>
-      <li><a href="add-branches.php">Add Branches</a></li>
-      <li><a href="remove-competitor.php">Remove Competitor</a></li>
-      <li><a href="remove-branches.php">Remove Branches</a></li>
+			<li><a href="../branches-list/branch-list.php">View Branches</a></li>
+      <li><a href="../branches-list/add-branches.php">Add Branches</a></li>
 			<li><a href="../map/map-index.php">View Map</a></li>
 		</ul>
   </nav>
@@ -48,7 +53,6 @@
 				  <table class="table">
 				    <thead>
 				      <tr>
-				        <th>#</th>
 				        <th>Name</th>
 				        <th>View Branches</th>
 				        <th>View Branches On Map</th>

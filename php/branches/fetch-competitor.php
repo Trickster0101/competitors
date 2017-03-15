@@ -13,10 +13,8 @@
       echo "<tbody>";
         echo "<tr>";
           echo "<td>$row[competitors_name]</td>";
-          echo "<td><button>VIEW BRANCHES</button></td>";
-          echo "<td><button>VIEW ON MAP</button></td>";
-          echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
-          echo "<td><a href='remove-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
+          echo "<td><button><a href='branch-list-table.php?competitors_id=$row[competitors_id]'>VIEW BRANCHES</button></td>";
+          echo "<td><button><a href='../map/map-competitor-branches.php?competitors_id=$row[competitors_id]'>VIEW BRANCHES ON MAP</button></td>";
         echo "</tr>";
       echo "</tbody>";
     }

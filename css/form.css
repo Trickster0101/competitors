@@ -1,4 +1,4 @@
-.post-form input[type=text] {
+.post-form input[type=text], .post-form input[type=select], .post-form input[type=number]  {
   font-family: "Myriad";
   font-weight: bold;
   width: 100%;
@@ -26,7 +26,7 @@
   margin: 5% 5% 0% 5%;
 }
 
-.post-form input[type=textarea]:focus, .post-form input[type=text]:focus, .textarea-style:focus {
+.post-form input[type=textarea]:focus, .post-form input[type=text]:focus, .post-form input[type=number]:focus .textarea-style:focus {
   border: 3px solid #555;
 }
 

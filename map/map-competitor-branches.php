@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	$_SESSION["competitors_id"] = null;
+?>
 <!DOCTYPE html>
 
 <html>
@@ -15,6 +19,11 @@
 </head>
 
 <body>
+	<?php if($_SESSION["competitors_id"] == null)
+	{
+		$_SESSION["competitors_id"] = $_GET['competitors_id'];
+	}
+	?>
   <div class="body-holder">
 
 		<!--Admin Panel Header -->
@@ -46,7 +55,7 @@
 					    var infoWindow = new google.maps.InfoWindow;
 
 					      // Change this depending on the name of your PHP or XML file
-					      downloadUrl('example.php', function(data) {
+					      downloadUrl('view-competitor-on-map.php', function(data) {
 					        var xml = data.responseXML;
 					        var markers = xml.documentElement.getElementsByTagName('marker');
 					        Array.prototype.forEach.call(markers, function(markerElem) {

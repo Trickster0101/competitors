@@ -20,7 +20,7 @@ html
 body
 {
 	height: 80%;
-	background: #eff1f4;
+	background: white;
   font-family: "Myriad";
 }
 
@@ -81,7 +81,7 @@ body
 .body-table-holder {
   height: 100%;
   width: 80%;
-  margin-left: 21.1%;
+  margin-left: 21%;
   background-color: white;
 }
 
@@ -90,7 +90,6 @@ body
   font-family: "Myriad";
   color: #233d91;
   font-size: 15px;
-  padding: 1.5%;
   background-color: #1a1a1a;
 }
 
@@ -134,7 +133,7 @@ body
   padding: 5%;
   text-decoration: none;
   font-family: "Myriad";
-  font-size: 12px;
+  font-size: 16px;
   font-variant: small-caps;
   letter-spacing: 2px;
   color: white;
@@ -173,15 +172,6 @@ body
   background-color: red;
   height: 100%;
   width: 100%;
-}
-.action-buttons {
-  cursor: pointer;
-}
-.table {
-  background-color: white;
-}
-tr:hover {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile Version */
