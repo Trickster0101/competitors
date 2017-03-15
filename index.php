@@ -14,6 +14,9 @@
 <head>
 	<title>Competitors</title>
   <!-- Sidebar Style CSS -->
+
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/form.css?version=75" />
 	<link rel="stylesheet" type="text/css" href="css/admin-panel.css?version=77" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
@@ -25,7 +28,7 @@
 		<!--Admin Panel Header -->
     <header class="row header">
       <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
+        <img class="logo" src="../img/budgetbotika_logo .png"/>
       </div>
     </header>
     <!-- End of Admin Panel Header -->

@@ -12,7 +12,8 @@
 <head>
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=86" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
   <link rel="stylesheet" type="text/css" href="../css/form.css?version=78" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -27,7 +28,7 @@
     <nav id="mySidenav" class="sidenav">
 			<div class="row">
 	      <div class="col-12 col-m-12">
-	        <h2>Control Panel</h2>
+	        <img class="logo" src="../img/budgetbotika_logo .png"/>
 	      </div>
 	    </div>
 
@@ -40,24 +41,14 @@
 			</ul>
     </nav>
 
-    <!--Admin Panel Header -->
-    <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
-    </header>
-    <!-- End of Admin Panel Header -->
   <div class="body-table-holder">
-    <div class="row body-page">
-      <div class="col-12 col-m-12 container">
-
 				<div class="row">
 					<div class="col-12 col-m-12">
 						<div class="panel panel-primary">
 				      <div class="panel-heading">List of Competitors</div>
 				      <div class="panel-body">
 								<div class="table-responsive">
-								  <table class="table">
+								  <table class="table table-bordered table-hover">
 								    <thead>
 								      <tr>
 								        <th>Name</th>
@@ -81,7 +72,7 @@
 				      <div class="panel-heading">List of City</div>
 				      <div class="panel-body">
 								<div class="table-responsive">
-								  <table class="table">
+								  <table class="table table-bordered table-hover">
 								    <thead>
 								      <tr>
 								        <th>City</th>
@@ -105,7 +96,7 @@
 				      <div class="panel-heading">List of Barangay</div>
 				      <div class="panel-body">
 								<div class="table-responsive">
-								  <table class="table">
+								  <table class="table table-bordered table-hover">
 								    <thead>
 								      <tr>
 								        <th>Barangay</th>
@@ -122,9 +113,6 @@
 				    </div>
 					</div>
 				</div>
-
-      </div>
-    </div>
   </div>
 
 </body>

@@ -12,7 +12,8 @@
 <head>
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=76" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
   <link rel="stylesheet" type="text/css" href="../css/form.css?version=78" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
     <nav id="mySidenav" class="sidenav">
 			<div class="row">
 	      <div class="col-12 col-m-12">
-	        <h2>Control Panel</h2>
+	        <img class="logo" src="../img/budgetbotika_logo .png"/>
 	      </div>
 	    </div>
 
@@ -42,71 +43,44 @@
 			</ul>
     </nav>
 
-    <!--Admin Panel Header -->
-    <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
-    </header>
-    <!-- End of Admin Panel Header -->
 
-    <div class="row body-page">
-      <div class="col-12 col-m-12 container">
+    <div class="row">
+			<div class= "body-page">
 
         <form id="post-form" action="../php/branches/add-branches.php" method="post">
     			<div class="row post-form">
-						<div class="col-12 col-m-12">
     					<label class="label-style">Competitor Name</label>
-							<select name="competitor_id" form="post-form" type="number">
+							<select class="form-control" name="competitor_id" form="post-form" type="number">
 							  <?php include '../php/branches/fetch-dropdown-values.php'; ?>
 							</select>
-    				</div>
 
-    				<div class="col-12 col-m-12">
     					<label class="label-style">Branch Name</label>
-    					<input type="text" name="branch_name">
-    				</div>
+    					<input class="form-control" type="text" name="branch_name">
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Branch Address</label>
-    					<input type="text" name="branch_address" required>
-    				</div>
+    					<input class="form-control" type="text" name="branch_address" required>
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Branch City</label>
-    					<input type="text" name="branch_city" required>
-    				</div>
+    					<input class="form-control" type="text" name="branch_city" required>
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Branch Barangay</label>
-    					<input type="text" name="branch_barangay" required>
-    				</div>
+    					<input class="form-control" type="text" name="branch_barangay" required>
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Branch Telephone</label>
-    					<input type="number" name="branch_telephone">
-    				</div>
+    					<input class="form-control" type="number" name="branch_telephone">
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Branch Cellphone</label>
-    					<input type="number" name="branch_cellphone">
-    				</div>
+    					<input class="form-control" type="number" name="branch_cellphone">
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Latitude</label>
-    					<input type="number" name="branch_lat" step="any">
-    				</div>
+    					<input class="form-control" type="number" name="branch_lat" step="any">
 
-						<div class="col-12 col-m-12">
     					<label class="label-style">Longitude</label>
-    					<input type="number" name="branch_long" step="any">
-    				</div>
+    					<input class="form-control" type="number" name="branch_long" step="any">
     			</div>
 
     			<div class="row post-form">
-    				<div class="col-12 col-m-12">
     					<input class="save-publish" type="submit" name="submit-branches">
-    				</div>
     			</div>
     		</form>
 

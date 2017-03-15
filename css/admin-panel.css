@@ -83,17 +83,27 @@ body
   color: #233d91;
   font-size: 15px;
   padding: 1.5%;
-  background-color: #1a1a1a;
+  background-color: #ff742c;
+  height: 10%;
+  width: 100%;
 }
 
-.header h1 {
+.header a {
+  top: 0;
+  left: 0;
   font-variant: small-caps;
   font-weight: bold;
   letter-spacing: 5px;
   color: white;
   font-size: 14px;
+  float: left;
 }
-
+.logo {
+  position: absolute;
+  right: 0;
+  top: 0.3%;
+  width: 13%;
+}
 .sidenav {
   height: 100%;
   width: 20%;

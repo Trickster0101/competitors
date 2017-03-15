@@ -8,9 +8,16 @@
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/map/map.css?version=85" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/form.css?version=75" />
+	<link rel="stylesheet" type="text/css" href="../css/map/map.css?version=1.1" />
 
 	<script src="../js/jquery-3.1.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -19,15 +26,12 @@
 
 		<!--Admin Panel Header -->
     <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
+			<a href="../index.php"><span class="glyphicon glyphicon-menu-left"></span></a>
+        <img class="logo" src="../img/budgetbotika_logo .png"/>
     </header>
     <!-- End of Admin Panel Header -->
 
-		<div class="row">
-			<div class="col-12 col-m-12">
-				<div id="map" style="height: 500px; width: 100%;">
+				<div id="map" style="height: 90%; width: 100%;">
 					<script>
 					  var customLabel = {
 					    restaurant: {
@@ -98,8 +102,6 @@
 					  function doNothing() {}
 					</script>
 
-				</div>
-			</div>
 		</div>
   </div>
 </body>

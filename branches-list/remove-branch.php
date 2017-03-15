@@ -12,7 +12,8 @@
 <head>
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=76" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
   <link rel="stylesheet" type="text/css" href="../css/form.css?version=78" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
     <nav id="mySidenav" class="sidenav">
 			<div class="row">
 	      <div class="col-12 col-m-12">
-	        <h2>Control Panel</h2>
+	        <img class="logo" src="../img/budgetbotika_logo .png"/>
 	      </div>
 	    </div>
 

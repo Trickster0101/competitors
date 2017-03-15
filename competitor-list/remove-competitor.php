@@ -12,7 +12,8 @@
 <head>
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=75" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
   <link rel="stylesheet" type="text/css" href="../css/form.css?version=75" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,12 +25,12 @@
 </head>
 
 <body>
-  <div class="body-holder">
+  <div class="fullscreen body-holder">
 
     <nav id="mySidenav" class="sidenav">
 			<div class="row">
 	      <div class="col-12 col-m-12">
-	        <h2>Control Panel</h2>
+	        <img class="logo" src="../img/budgetbotika_logo .png"/>
 	      </div>
 	    </div>
 
@@ -42,17 +43,9 @@
 			</ul>
     </nav>
 
-    <!--Admin Panel Header -->
-    <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
-    </header>
-    <!-- End of Admin Panel Header -->
-
-    <div class="row body-page">
-      <div class="col-12 col-m-12 container">
-				<?php include '../php/competitor/filter-competitor.php' ?>;
+    <div class="row">
+			<div class="body-page">
+				<?php include '../php/competitor/filter-competitor.php' ?>
 
         <form id="post-form" action="../php/competitor/remove-competitor.php" method="post">
     			<div class="row post-form">

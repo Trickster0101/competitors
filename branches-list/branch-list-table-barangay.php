@@ -10,7 +10,8 @@
 <head>
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=76" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
   <link rel="stylesheet" type="text/css" href="../css/form.css?version=78" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,12 +23,12 @@
 </head>
 
 <body>
-  <div class="body-holder">
+  <div class="fullscreen body-holder">
 
     <nav id="mySidenav" class="sidenav">
 			<div class="row">
 	      <div class="col-12 col-m-12">
-	        <h2>Control Panel</h2>
+	        <img class="logo" src="../img/budgetbotika_logo .png"/>
 	      </div>
 	    </div>
 
@@ -40,14 +41,7 @@
 			</ul>
     </nav>
 
-    <!--Admin Panel Header -->
-    <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
-    </header>
-    <!-- End of Admin Panel Header -->
-
+		<div class="body-table-holder">
 		<div class="row">
 			<form role="form" action="branch-list-table-city.php" method="POST">
 				<div class="col-12 col-m-12" style="padding: 5%;">
@@ -80,41 +74,41 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12 col-m-12">
-				<div class="table-responsive">
-				  <table class="table">
-				    <thead>
-							<tr>
-				        <th>Competitor</th>
-				        <th>Name</th>
-								<th>Address</th>
-								<th>City</th>
-								<th>Barangay</th>
-								<th>Tel</th>
-								<th>Cell</th>
-				        <th>Map</th>
-								<th>EDIT</th>
-								<th>REMOVE</th>
-							</tr>
-				    </thead>
+			<div class="table-container">
+			<div class="table-responsive">
+			  <table class="table table-bordered table-hover">
+			    <thead>
+						<tr>
+			        <th class="orange">Competitor</th>
+			        <th class="orange">Name</th>
+							<th class="orange">Address</th>
+							<th class="orange">City</th>
+							<th class="orange">Barangay</th>
+							<th class="orange">Tel</th>
+							<th class="orange">Cell</th>
+			        <th class="orange">Map</th>
+							<th class="orange">EDIT</th>
+							<th class="orange">REMOVE</th>
+						</tr>
+			    </thead>
 
-						<?php
-							if($_SESSION["branch_id"] == null)
-							{
-								$_SESSION["branch_id"] = $_GET['branch_id'];
-							}
-							else {
-								# code...
-							}
-						?>
+					<?php
+						if($_SESSION["branch_id"] == null)
+						{
+							$_SESSION["branch_id"] = $_GET['branch_id'];
+						}
+						else {
+							# code...
+						}
+					?>
 
-				    <?php include '../php/branches/search-barangay.php'; ?>
+			    <?php include '../php/branches/search-barangay.php'; ?>
 
-				  </table>
-			  </div>
-			</div>
+			  </table>
+		  </div>
 		</div>
-
+	</div>
+	</div>
   </div>
 
 </body>

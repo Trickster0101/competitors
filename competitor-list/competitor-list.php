@@ -13,7 +13,8 @@
 	<title>Competitors</title>
 	<!-- <link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" /> -->
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list.css?version=97" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/competitor-list-new.css?version=1" />
+	<link rel="stylesheet" type="text/css" href="../css/competitor-list/control-panel.css?version=1" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,9 +25,9 @@
 <body>
   <nav id="mySidenav" class="sidenav">
 		<div class="row">
-      <div class="col-12 col-m-12">
-        <h2>Control Panel</h2>
-      </div>
+			<div class="col-12 col-m-12">
+	      <img class="logo" src="../img/budgetbotika_logo .png"/>
+	    </div>
     </div>
 
 		<ul class="topnav">
@@ -38,33 +39,23 @@
 		</ul>
   </nav>
 
-	<div class="body-table-holder">
-    <!--Admin Panel Header -->
-    <header class="row header">
-      <div class="col-12 col-m-12">
-        <h1>HELLO, ADMIN!</h1>
-      </div>
-    </header>
-    <!-- End of Admin Panel Header -->
+	<div class="fullscreen body-table-holder">
+		<div class="table-container">
+			<div class="table-responsive">
+			  <table class="table table-bordered table-hover">
+			    <thead>
+			      <tr>
+			        <th class="orange">Name</th>
+			        <th class="orange">View Branches</th>
+			        <th class="orange">View Branches On Map</th>
+							<th class="orange">Edit</th>
+							<th class="orange">Remove</th>
+						</tr>
+			    </thead>
 
-		<div class="row">
-			<div class="col-12 col-m-12">
-				<div class="table-responsive">
-				  <table class="table">
-				    <thead>
-				      <tr>
-				        <th>Name</th>
-				        <th>View Branches</th>
-				        <th>View Branches On Map</th>
-								<th>EDIT</th>
-								<th>REMOVE</th>
-							</tr>
-				    </thead>
+			    <?php include '../php/competitor/fetch-competitor.php'; ?>
 
-				    <?php include '../php/competitor/fetch-competitor.php'; ?>
-
-				  </table>
-			  </div>
+			  </table>
 			</div>
 		</div>
 
