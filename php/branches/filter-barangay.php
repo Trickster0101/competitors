@@ -14,6 +14,7 @@
         echo "<tr>";
           echo "<td>$branch_barangay</td>";
           echo "<td><button><a href='branch-list-table-barangay.php?branch_id=$row[branch_barangay]'>VIEW BRANCHES</button></td>";
+          echo "<td><button><a href='../map/map-barangay-branches.php?branch_id=$row[branch_barangay]'>VIEW BRANCHES ON MAP</button></td>";
         echo "</tr>";
       echo "</tbody>";
     }

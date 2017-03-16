@@ -28,11 +28,13 @@
             echo "<td>$row[competitors_name]</td>";
             echo "<td>$row[branch_name]</td>";
             echo "<td>$row[branch_address]</td>";
+            echo "<td>$row[branch_city]</td>";
+            echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
             echo "<td><button>VIEW ON MAP</button></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
+            echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
+            echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
         echo "</tbody>";
       }
@@ -69,11 +71,13 @@
             echo "<td>$row[competitors_name]</td>";
             echo "<td>$row[branch_name]</td>";
             echo "<td>$row[branch_address]</td>";
+            echo "<td>$row[branch_city]</td>";
+            echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
             echo "<td><button>VIEW ON MAP</button></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
+            echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
+            echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
         echo "</tbody>";
       }
@@ -110,11 +114,13 @@
             echo "<td>$row[competitors_name]</td>";
             echo "<td>$row[branch_name]</td>";
             echo "<td>$row[branch_address]</td>";
+            echo "<td>$row[branch_city]</td>";
+            echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
             echo "<td><button>VIEW ON MAP</button></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
+            echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
+            echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
         echo "</tbody>";
       }
@@ -147,11 +153,13 @@
             echo "<td>$row[competitors_name]</td>";
             echo "<td>$row[branch_name]</td>";
             echo "<td>$row[branch_address]</td>";
+            echo "<td>$row[branch_city]</td>";
+            echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
             echo "<td><button>VIEW ON MAP</button></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
-            echo "<td><a href='edit-competitor.php?competitors_id=$row[competitors_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
+            echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
+            echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
         echo "</tbody>";
       }

@@ -77,13 +77,15 @@
 				<div class="table-responsive">
 				  <table class="table">
 				    <thead>
-				      <tr>
-				        <th>Competitor Name</th>
-				        <th>Branch Name</th>
-								<th>Branch Address</th>
-								<th>Branch Telephone #</th>
-								<th>Branch Cellphone #</th>
-				        <th>View Branch On Map</th>
+							<tr>
+				        <th>Competitor</th>
+				        <th>Name</th>
+								<th>Address</th>
+								<th>City</th>
+								<th>Barangay</th>
+								<th>Tel</th>
+								<th>Cell</th>
+				        <th>Map</th>
 								<th>EDIT</th>
 								<th>REMOVE</th>
 							</tr>

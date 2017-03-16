@@ -31,17 +31,14 @@
     <!-- End of Admin Panel Header -->
 
 		<div class="row">
-			<div class="col-4 col-m-4">
+			<div class="col-6 col-m-6">
 				<button class="dash-buttons"><a href="competitor-list/competitor-list.php">Competitors</a></button>
 			</div>
 
-			<div class="col-4 col-m-4">
+			<div class="col-6 col-m-6">
 				<button class="dash-buttons"><a href="map/map-index.php">Map</a></button>
 			</div>
 
-			<div class="col-4 col-m-4">
-				<button class="dash-buttons">Filter</button>
-			</div>
 		</div>
 
   </div>
