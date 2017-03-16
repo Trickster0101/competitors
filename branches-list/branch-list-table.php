@@ -1,5 +1,12 @@
 <?php
 	session_start();
+	if($_SESSION["competitors_id"] == null)
+	{
+		$_SESSION["competitors_id"] = $_GET['competitors_id'];
+	}
+	else {
+		# code...
+	}
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +56,7 @@
     <!-- End of Admin Panel Header -->
 
 		<div class="row">
+
 			<form role="form" action="branch-list-table.php" method="POST">
 				<div class="col-12 col-m-12" style="padding: 5%;">
 					<div class="form-group input-group col-md-8 col-md-offset-3">
@@ -69,7 +77,14 @@
 						</span>
 					</div>
 				</div>
+
+				<center>
+					<input type='submit' value='Export to Excel' name='export_excel' class='btn btn-info' />
+				</center>
+				
 			</form>
+			<br>
+			<br>
 		</div>
 
 		<div class="row">
@@ -90,16 +105,6 @@
 								<th>REMOVE</th>
 							</tr>
 				    </thead>
-
-						<?php
-							if($_SESSION["competitors_id"] == null)
-							{
-								$_SESSION["competitors_id"] = $_GET['competitors_id'];
-							}
-							else {
-								# code...
-							}
-						?>
 
 				    <?php include '../php/branches/search-filter.php'; ?>
 

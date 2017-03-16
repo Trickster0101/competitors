@@ -20,7 +20,7 @@ $parnode = $dom->appendChild($node);
 // Select all the rows in the markers table
 $branch_city = $_SESSION["branch_id"];
 
-$query = "SELECT * FROM branches b, competitors c where b.branch_city = '$_SESSION[branch_id]' && b.is_active = 1 && c.is_active = 1 && b.competitor_id = c.competitors_id";
+$query = "SELECT * FROM branches b, competitors c where b.branch_id = '$_SESSION[branch_id]' && b.is_active = 1 && c.is_active = 1 && b.competitor_id = c.competitors_id";
 $result = mysqli_query($conn, $query);
 if (!$result) {
   die('Invalid query: ' . mysqli_error($conn));

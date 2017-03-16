@@ -69,7 +69,14 @@
 						</span>
 					</div>
 				</div>
+
+				<center>
+					<input type='submit' value='Export to Excel' name='export_excel' class='btn btn-info' />
+				</center>
 			</form>
+
+			<br>
+			<br>
 		</div>
 
 		<div class="row">

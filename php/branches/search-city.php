@@ -32,7 +32,7 @@
             echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
-            echo "<td><button>VIEW ON MAP</button></td>";
+            echo "<td><button><a href='../map/map-branch.php?branch_id=$row[branch_id]'>MAP VIEW</a></button></td>";
             echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
             echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
@@ -75,7 +75,7 @@
             echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
-            echo "<td><button>VIEW ON MAP</button></td>";
+            echo "<td><button><a href='../map/map-branch.php?branch_id=$row[branch_id]'>MAP VIEW</a></button></td>";
             echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
             echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
@@ -118,7 +118,7 @@
             echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
-            echo "<td><button>VIEW ON MAP</button></td>";
+            echo "<td><button><a href='../map/map-branch.php?branch_id=$row[branch_id]'>MAP VIEW</a></button></td>";
             echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
             echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
@@ -127,6 +127,43 @@
     }
     else {
       echo "Nothing";
+    }
+  }
+  else if(isset($_POST['export_excel']))
+  {
+    $branch_id = $_SESSION["branch_id"];
+
+    $select = "select * from competitors c, branches b where b.branch_city = '$branch_id' && b.competitor_id = c.competitors_id && b.is_active = 1 && c.is_active = 1";
+    $result=mysqli_query($conn,$select);
+
+    if ($result->num_rows > 0)
+    {
+      $output .='<table class="table" border="1">
+        <tr>
+          <th>Competitor Name</th>
+          <th>Branches</th>
+          <th>Address</th>
+          <th>Telephone Number</th>
+          <th>Cellphone Number</th>
+        </tr>';
+        while ($row = mysqli_fetch_array($result))
+        {
+          $output .=
+          '
+          <tr>
+            <td>'.$row["competitors_name"].'</td>
+            <td>'.$row["branch_name"].'</td>
+            <td>'.$row["branch_address"].'</td>
+            <td>'.$row["branch_telephone"].'</td>
+            <td>'.$row["branch_cellphone"].'</td>
+          </tr>
+          ';
+        }
+        $output .= '</table>';
+        ob_end_clean();
+        header("Content-Type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment; filename=city-branches.xls");
+        echo $output;
     }
   }
   else
@@ -157,7 +194,7 @@
             echo "<td>$row[branch_barangay]</td>";
             echo "<td>$row[branch_telephone]</td>";
             echo "<td>$row[branch_cellphone]</td>";
-            echo "<td><button>VIEW ON MAP</button></td>";
+            echo "<td><button><a href='../map/map-branch.php?branch_id=$row[branch_id]'>MAP VIEW</a></button></td>";
             echo "<td><a href='edit-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-edit'></span></a></td>";
             echo "<td><a href='remove-branch.php?branch_id=$row[branch_id]'><span class='glyphicon glyphicon-remove'></span></a></td>";
           echo "</tr>";
